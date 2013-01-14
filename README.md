@@ -4,24 +4,19 @@ A basic noir3 web app to use as a starting point for real apps.
 
 ## Usage
 
-If you use cake, substitute 'lein' with 'cake' below. Everything should work fine.
-
-```bash
-lein deps
-lein run
-```
-
 To start the app from command line:
-```lein ring server```
+
+    lein ring server
 
 To start in nrepl:
-```(require 'noir3-basic.server)
-(use 'ring.server.standalone)
-(serve noir3-basic.server/handler)
-```
+
+    (require 'noir3-basic.server)
+    (use 'ring.server.standalone)
+    (serve noir3-basic.server/handler)
 
 To create an uberwar that can be deployed to tomcat etc:
-```lein ring uberwar```
+
+    lein ring uberwar
 
 ## License
 
